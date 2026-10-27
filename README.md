@@ -1,7 +1,5 @@
 # 1. Apa itu Customer Churn Prediction?
-Customer Churn Prediction adalah proses menggunakan teknik Machine Learning dan analitik data untuk memprediksi apakah seorang pelanggan akan berhenti berlangganan (churn) dari suatu layanan atau perusahaan, atau apakah mereka akan tetap bertahan.
-
-Dalam konteks bisnis, ini adalah cara bagi perusahaan untuk mendeteksi tanda-tanda kepergian pelanggan sebelum benar-benar terjadi.
+Customer Churn Prediction adalah sistem berbasis Machine Learning dan data analytics untuk mengidentifikasi probabilitas pelanggan berhenti berlangganan (churn) maupun tetap bertahan. Melalui pendekatan ini, bisnis dapat mendeteksi indikasi awal hilangnya pelanggan secara proaktif sebelum benar-benar terjadi.
 
 # 2. Masalah Apa yang Diselesaikan?
 Masalah utama yang diselesaikan dalam proyek ini adalah tingginya tingkat perpindahan pelanggan ke kompetitor, di mana perusahaan sering kali terlambat menyadarinya (bersifat reaktif).
