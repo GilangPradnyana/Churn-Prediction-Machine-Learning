@@ -15,7 +15,7 @@ Biaya Akuisisi yang Mahal: Mencari pelanggan baru terbukti jauh lebih mahal (bis
 Kurangnya Deteksi Dini: Tanpa sistem AI, perusahaan biasanya baru tahu pelanggan marah setelah mereka menutup akun. Dengan prediksi ini, perusahaan bisa bertindak proaktif (misalnya memberikan diskon atau layanan khusus) kepada pelanggan yang berisiko tinggi.
 
 # 3. Data yang Digunakan 
-Dataset yang Anda kirimkan adalah Telco Customer Churn dari Kaggle, dengan spesifikasi sebagai berikut:
+Dataset yang dipakai adalah Telco Customer Churn dari Kaggle, dengan spesifikasi sebagai berikut:
 
 Ukuran Data: Terdiri dari 7.043 baris data pelanggan dan 21 kolom (fitur).
 
