@@ -65,3 +65,39 @@ Dalam proyek ini, Anda akan membandingkan 5 algoritma klasifikasi berikut:
 Mengukur keberhasilan model menggunakan metrik seperti Recall, Precision, dan ROC-AUC (di mana Recall penting agar sedikit mungkin pelanggan churn yang lolos dari deteksi).
 
 Melihat Feature Importance untuk mengetahui fitur mana yang paling kuat memengaruhi pelanggan untuk churn (misalnya: durasi tenure yang singkat dan jenis kontrak month-to-month).
+
+# 5. Pustaka (Libraries) Python yang Digunakan
+Dalam membangun proyek Machine Learning ini, kita menggunakan beberapa pustaka standar industri (standard stack) di Python:
+
+# Pandas & NumPy
+
+Fungsi: Untuk manipulasi, pembersihan (data cleaning), dan pengolahan data tabular.
+
+Peran di Proyek:
+* Membaca file CSV, menangani nilai kosong (missing values), mengubah tipe data, dan melakukan operasi matematika dasar.
+
+# Scikit-Learn (sklearn)
+
+Fungsi: Pustaka utama untuk Machine Learning di Python.
+
+Peran di Proyek:
+
+* Menyediakan algoritma klasifikasi: Logistic Regression, K-Nearest Neighbors (KNN), Support Vector Classifier (SVC), Decision Tree, dan Random Forest.
+
+* Menyediakan alat pra-pemrosesan seperti StandardScaler (untuk normalisasi angka) dan OneHotEncoder / pd.get_dummies (untuk mengubah teks kategori menjadi angka).
+
+* Menyediakan metrik evaluasi seperti confusion_matrix, classification_report, dan roc_auc_score.
+
+# Imbalanced-Learn (imbalanced-learn / imblearn)
+
+Fungsi: Pustaka khusus untuk menangani data yang tidak seimbang (imbalanced data).
+
+Peran di Proyek:
+* Menyediakan teknik SMOTE (Synthetic Minority Over-sampling Technique) untuk menyeimbangkan jumlah data kelas churn dan tidak churn pada data latih.
+
+# Matplotlib & Seaborn
+
+Fungsi: Pustaka utama untuk visualisasi data dan grafik di Python.
+
+Peran di Proyek: 
+* Membuat berbagai macam grafik analisis data dan evaluasi model.
