@@ -92,31 +92,31 @@ Seluruh proses transformasi yang mempelajari parameter dari data harus disesuaik
 
 Lima algoritma klasifikasi digunakan sebagai kandidat model untuk dibandingkan berdasarkan performa pada data evaluasi.
 
-#### Logistic Regression
+#### 1.Logistic Regression
 
 Algoritma klasifikasi yang memodelkan probabilitas suatu observasi termasuk ke dalam kelas tertentu menggunakan fungsi logistik.
 
 **Tujuan penggunaan:** Menjadi model baseline untuk memperoleh tolok ukur performa awal serta membantu memahami hubungan antara fitur masukan dan probabilitas churn.
 
-#### K-Nearest Neighbors (KNN)
+#### 2.K-Nearest Neighbors (KNN)
 
 Algoritma klasifikasi berbasis jarak yang menentukan kelas suatu observasi berdasarkan label dari sejumlah tetangga terdekat dalam ruang fitur.
 
 **Tujuan penggunaan:** Mengevaluasi apakah pelanggan dengan karakteristik layanan, durasi berlangganan, dan pola tagihan yang serupa memiliki kecenderungan churn yang serupa.
 
-#### Support Vector Classifier (SVC)
+#### 3.Support Vector Classifier (SVC)
 
 Algoritma klasifikasi yang mencari batas keputusan optimal dengan memaksimalkan margin pemisah antarkelas. Fungsi kernel juga dapat digunakan untuk menangani pola pemisahan nonlinier.
 
 **Tujuan penggunaan:** Mengevaluasi efektivitas klasifikasi berbasis margin dalam membedakan pelanggan churn dan non-churn.
 
-#### Decision Tree Classifier
+#### 4.Decision Tree Classifier
 
 Algoritma berbasis pohon keputusan yang membagi data secara bertahap berdasarkan aturan pada fitur tertentu. Pemilihan pemisahan dapat menggunakan kriteria seperti *Gini Impurity* atau *Entropy*.
 
 **Tujuan penggunaan:** Menghasilkan model dengan alur keputusan yang relatif mudah diinterpretasikan untuk memahami karakteristik pelanggan yang berkaitan dengan churn.
 
-#### Random Forest Classifier
+#### 5.Random Forest Classifier
 
 Algoritma *Ensemble Learning* yang menggabungkan prediksi dari sejumlah pohon keputusan yang dilatih menggunakan variasi sampel dan subset fitur.
 
@@ -168,3 +168,35 @@ Model terbaik, nilai evaluasi, serta fitur yang paling berpengaruh akan ditentuk
 Proyek ini dikembangkan untuk keperluan pembelajaran, eksperimen, dan analisis data. Hasil prediksi merupakan estimasi berdasarkan pola historis dalam dataset, bukan kepastian bahwa seorang pelanggan akan berhenti berlangganan.
 
 Penggunaan model pada lingkungan bisnis nyata memerlukan validasi lebih lanjut terhadap kualitas data, performa pada data baru, serta kesesuaian hasil prediksi dengan kebutuhan operasional.
+# 5. Pustaka (Libraries) Python yang Digunakan
+Dalam membangun proyek Machine Learning ini, kita menggunakan beberapa pustaka standar industri (standard stack) di Python:
+
+1. Pandas & NumPy
+
+* Fungsi: Untuk manipulasi, pembersihan (data cleaning), dan pengolahan data tabular.
+
+* Peran di Proyek: Membaca file CSV, menangani nilai kosong (missing values), mengubah tipe data, dan melakukan operasi matematika dasar.
+
+2. Scikit-Learn (sklearn)
+
+* Fungsi: Pustaka utama untuk Machine Learning di Python.
+
+* Peran di Proyek:
+
+* Menyediakan algoritma klasifikasi: Logistic Regression, K-Nearest Neighbors (KNN), Support Vector Classifier (SVC), Decision Tree, dan Random Forest.
+
+* Menyediakan alat pra-pemrosesan seperti StandardScaler (untuk normalisasi angka) dan OneHotEncoder / pd.get_dummies (untuk mengubah teks kategori menjadi angka).
+
+* Menyediakan metrik evaluasi seperti confusion_matrix, classification_report, dan roc_auc_score.
+
+3. Imbalanced-Learn (imbalanced-learn / imblearn)
+
+* Fungsi: Pustaka khusus untuk menangani data yang tidak seimbang (imbalanced data).
+
+* Peran di Proyek: Menyediakan teknik SMOTE (Synthetic Minority Over-sampling Technique) untuk menyeimbangkan jumlah data kelas churn dan tidak churn pada data latih.
+
+4. Matplotlib & Seaborn
+
+* Fungsi: Pustaka utama untuk visualisasi data dan grafik di Python.
+
+* Peran di Proyek: Membuat berbagai macam grafik analisis data dan evaluasi model.
